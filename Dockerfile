@@ -1,4 +1,4 @@
 FROM openjdk
-COPY target/* .war/
+COPY target/* .jar/
 EXPOSE 8080
-ENTRYPOINT ["java","-war","/hello-world.war"]
+ENTRYPOINT ["java","-jar","/hello-world.jar"]
