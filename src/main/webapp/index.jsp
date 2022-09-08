@@ -3,25 +3,25 @@
     <title>DevOps Team...</title>
     <style>
         h1 {
-  font-size: 100px;
+  font-size: 70px;
 }
 h2{
-  font-size: 90px;
+  font-size: 60px;
 }
-.1 {
+a {
   font-size: 50px;
 }
-.2 {
+b {
   font-size: 50px;
 }
-.3 {
+c {
   font-size: 50px;
 }
 
-.4{
+d{
   font-size: 50px;
 }
-.5 {
+e {
   font-size: 50px;
 }
 
@@ -40,11 +40,11 @@ h2{
 <h2 style="red"><center>Deployed from jenkins!<center></h2>
 <div>
 
-    <div class="1"style="color:#0040AD;">vinit patil</div>
-    <div class="2"style="color:#0040AD;">Ramesh Jahangir</div>
-    <div class="3" style="color:#00F8CB;">Kirti Bafna</div>
-    <div class="4" style="color:#FF9900;">Mayuresh Naik</div>
-    <div class="5" style="color:#FF9900;">Shubham Potbhare</div>
+    <div class="a">vinit patil</div>
+    <div class="b">Ramesh Jahangir</div>
+    <div class="c" >Kirti Bafna</div>
+    <div class="d">Mayuresh Naik</div>
+    <div class="e">Shubham Potbhare</div>
 </div>
 <div>
     <p>Jenkin Project Build!</p>
