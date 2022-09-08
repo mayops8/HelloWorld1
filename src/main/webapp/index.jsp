@@ -2,45 +2,57 @@
     <head>
     <title>DevOps Team...</title>
     <style>
-        h1 {
+body{background-color: #FFFFFF;}
+        h1{
   font-size: 70px;
+  color: Lightgray;
+  text-align: center;
 }
 h2{
   font-size: 60px;
+  color: #D33834;
+  text-align: center;
 }
-a {
+.a {
   font-size: 50px;
+   color: #FF9933;
+   text-align: center;
+  
 }
-b {
+.b {
   font-size: 50px;
+  color: #FF9933;
+  text-align: center;
 }
-c {
+.c {
   font-size: 50px;
+  text-align: center;
+  color: #000080;
 }
 
-d{
+.d{
   font-size: 50px;
+  text-align: center;
+  color: #138808;
 }
-e {
+.e {
   font-size: 50px;
+  text-align: center;
+  color: #138808;
 }
-
-
-
-
-
-
-
-
-        </style>
+p{
+  font-size: 50px;
+  color: #D33834;
+  text-align: center;
+}
+ </style>
     </head>
-<body {background-color: #E6E6FA;
-}>
+<body>
 <h1 style="White"><b><center>HTML our First jenkins project.</center></b></h1>
 <h2 style="red"><center>Deployed from jenkins!<center></h2>
 <div>
 
-    <div class="a">vinit patil</div>
+    <div class="a">Vinit Patil</div>
     <div class="b">Ramesh Jahangir</div>
     <div class="c" >Kirti Bafna</div>
     <div class="d">Mayuresh Naik</div>
