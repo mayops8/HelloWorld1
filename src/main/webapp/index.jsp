@@ -52,7 +52,7 @@ p{
 <h2 style="red"><center>Deployed from jenkins!<center></h2>
 <div>
 
-    <div class="a">Vinit Patil</div>
+    <div class="a">Vinit D. Patil</div>
     <div class="b">Ramesh Jahangir</div>
     <div class="c" >Kirti Bafna</div>
     <div class="d">Mayuresh Naik</div>
