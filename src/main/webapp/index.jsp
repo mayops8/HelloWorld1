@@ -53,7 +53,7 @@ p{
 <div>
 
     <div class="a">Vinit D Patil</div>
-    <div class="b">Ramesh Jangir</div>
+    <div class="b">Ramesh V Jangir</div>
     <div class="c" >Kirti Bafna</div>
     <div class="d">Mayuresh A Naik</div>
     <div class="e">Shubham H Potbhare</div>
