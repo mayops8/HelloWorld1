@@ -56,7 +56,7 @@ p{
     <div class="b">Ramesh  Jangir</div>
     <div class="c" >Kirti Bafna</div>
     <div class="d">Mayuresh  Naik</div>
-    <div class="e">Shubham  Potbhare</div>
+    <div class="e">Shubham H Potbhare</div>
 </div>
 <div>
     <p>Jenkin Project Build!</p>
