@@ -8,7 +8,7 @@
     <h2>Ramesh Jahangir</h2>
     <h3>Kirti Bafna</h3>
     <h1 style="color:#FF9900;">Mayuresh</h1>
-    <h1style="color:#FF9900;">Shubham Potbhare</h1>
+    <h1 style="color:#FF9900;">Shubham Potbhare</h1>
 </div>
 <div>
     <p>Jenkin Project Build!</p>
