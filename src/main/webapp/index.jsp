@@ -14,33 +14,57 @@ h2{
   text-align: center;
 }
 .a {
+top: 250px;
+left: 110px;
+position: absolute;
   font-size: 50px;
+ z-index: -1;
    color: #FF9933;
-   text-align: center;
+   text-align: left;
   
 }
 .b {
+  position: absolute;
+  right: 110px;
+  top: 250px;
+  z-index: -1;
   font-size: 50px;
   color: #FF9933;
   text-align: center;
 }
 .c {
+  top: 320px;
+  left: 500px;
+  position: absolute;
+  z-index: -1;
   font-size: 50px;
   text-align: center;
   color: #000080;
 }
 
 .d{
+  top: 400px;
+  left: 110px;
+  position: absolute;
+  z-index: -1;
   font-size: 50px;
   text-align: center;
   color: #138808;
 }
 .e {
+  top: 400px;
+  right: 110px;
+  position: absolute;
+  z-index: -1;
   font-size: 50px;
-  text-align: center;
+  text-align: right;
   color: #138808;
 }
 p{
+  top: 450px;
+  left: 400px;
+  position: absolute;
+  z-index: -1;
   font-size: 50px;
   color: #D33834;
   text-align: center;
@@ -48,7 +72,7 @@ p{
  </style>
     </head>
 <body>
-<h1 style="White"><b><center>HTML our First jenkins project.</center></b></h1>
+<h1 style="White"><b><center>Our First jenkins project.</center></b></h1>
 <h2 style="red"><center>Deployed from jenkins!<center></h2>
 <div>
 
