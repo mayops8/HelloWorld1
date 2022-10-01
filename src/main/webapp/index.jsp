@@ -6,7 +6,7 @@
 	<style>
 body{
     background-color: white;
-    background-image: url(ab.jpg);
+    background-image: url(ab.png);
     background-repeat: no-repeat;
     background-image: image-set();
     background-size: 1280px 600px;
