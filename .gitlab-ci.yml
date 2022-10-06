@@ -6,7 +6,7 @@ stages:
 deploy_to_development_environment:
   stage: dev
   environment: development
-  when: manual
+  #when: manual
   only: 
     - NEO_1
 script:
