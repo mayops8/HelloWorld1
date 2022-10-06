@@ -1,19 +1,20 @@
 image: python
 stages:
   - "dev"
-  - "tester"
+  - "qa"
   - "prod"
 deploy_to_development_environment:
   stage: dev
   environment: development
-  #when: manual
-  only: 
+  # when: manual
+  only:
     - gitlab_CICD
-script:
-  - mkdir -p ~/.ssh/
-  - chmod 700 ~/.ssh
-  - echo "$SSH_KEY" > ~/.ssh/id_rsa
-  - apt update && apt install openssh-server -y
-  - sh-keyscan -p 2056 $NEO_IP >> ~/.ssh/known_hosts
-  - chmod 600 ~/.ssh/known_hosts
-  - cat ~/.ssh/known_hosts
+  script:
+    - mkdir -p ~/.ssh/
+    - chmod 700 ~/.ssh
+    - echo "$SSH_KEY" > ~/.ssh/id_rsa 
+    - chmod 600 ~/.ssh/id_rsa 
+    - apt update && apt install openssh-server -y
+    - ssh-keyscan -p 22 43.201.76.190 >> ~/.ssh/known_hosts
+    - chmod 600 ~/.ssh/known_hosts
+    - cat ~/.ssh/known_hosts
