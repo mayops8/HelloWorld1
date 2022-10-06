@@ -1,0 +1,19 @@
+image: python
+stages:
+  - "dev"
+  - "tester"
+  - "prod"
+deploy_to_development_environment:
+  stage: dev
+  environment: development
+  when: manual
+  only: 
+    - NEO_1
+script:
+  - mkdir -p ~/.ssh/
+  - chmod 700 ~/.ssh
+  - echo "$SSH_KEY" > ~/.ssh/id_rsa
+  - apt update && apt install openssh-server -y
+  - sh-keyscan -p 2056 $NEO_IP >> ~/.ssh/known_hosts
+  - chmod 600 ~/.ssh/known_hosts
+  - cat ~/.ssh/known_hosts
