@@ -8,7 +8,7 @@ deploy_to_development_environment:
   environment: development
   #when: manual
   only: 
-    - NEO_1
+    - gitlab_CICD
 script:
   - mkdir -p ~/.ssh/
   - chmod 700 ~/.ssh
