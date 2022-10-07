@@ -15,7 +15,7 @@ deploy_to_development_environment:
     - echo "$SSH_KEY" > ~/.ssh/id_rsa 
     - chmod 600 ~/.ssh/id_rsa 
     - apt update && apt install openssh-server -y
-    - ssh-keyscan -p 22 43.201.76.190 >> ~/.ssh/known_hosts
+    - ssh-keyscan -p 22 172.31.41.86 >> ~/.ssh/known_hosts
     - chmod 600 ~/.ssh/known_hosts
     - cat ~/.ssh/known_hosts
   
