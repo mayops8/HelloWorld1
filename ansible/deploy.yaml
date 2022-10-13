@@ -1,4 +1,4 @@
-- hosts: "{{ server }}" 
+- hosts: 3.35.52.68 
   name: Deploy hello-world project
   gather_facts: no 
   become: yes 
@@ -20,7 +20,8 @@
             dest: /home/project/hello-world 
             force: yes 
             accept_hostkey: yes 
-            version: "{{ branch }}" 
+            version: gitlab_CICD
+
       - name: Creat a war file 
         shell: cd /home/project/hello-world && mvn clean install 
       - name: Upload a war file to the tomcat server 
