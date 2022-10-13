@@ -1,1 +1,34 @@
-
+- hosts: "{{ server }}" 
+  name: Deploy hello-world project
+  gather_facts: no 
+  become: yes 
+  tasks: 
+      - name: Stop the Tomcat service 
+        service: name=tomcat state=stopped 
+    #   - name: Stop the Tomcat script 
+    #     shell: /opt/tomcat/bin/shutdown.sh 
+      - name: Cleaning old data from the Tomcat server 
+        shell: | 
+          mv /usr/share/tomcat/webapps/ROOT /home/backup/ROOT 
+          mv /usr/share/tomcat/webapps/ROOT.war /home/backup/ROOT.war 
+          rm -rf /home/project/hello-world 
+# ignore_errors: yes 
+      
+      - name: Clonning file to Server 
+        git: 
+            repo: 'git@gitlab.com:Vinit1369/hello-world.git' 
+            dest: /home/project/hello-world 
+            force: yes 
+            accept_hostkey: yes 
+            version: "{{ branch }}" 
+      - name: Creat a war file 
+        shell: cd /home/project/hello-world && mvn clean install 
+      - name: Upload a war file to the tomcat server 
+        shell: 
+            cp /home/project/hello-world/target/*.war /usr/share/tomcat/webapps/ROOT.war 
+      - name: Apply permission 
+        shell: chgrp tomcat -R /usr/share/tomcat/webapps/ROOT.war && chown tomcat -R /usr/share/tomcat/webapps/ROOT.war 
+    #   - name: Start the Tomcat script 
+    #     shell: /opt/tomcat/bin/startup.sh 
+      - name: Start the Tomcat service 
+        service: name=tomcat state=started 
