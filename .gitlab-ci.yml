@@ -1,12 +1,10 @@
 image: python
 stages:
   - "dev"
-  - "qa"
-  - "prod"
 deploy_to_development_environment:
   stage: dev
   environment: development
-  # when: manual
+  when: manual
   only:
     - gitlab_CICD
   script:
@@ -15,8 +13,11 @@ deploy_to_development_environment:
     - echo "$SSH_KEY" > ~/.ssh/id_rsa 
     - chmod 600 ~/.ssh/id_rsa 
     - apt update && apt install openssh-server -y
-    - ssh-keyscan 3.35.52.68 >> ~/.ssh/known_hosts
+    - ssh-keyscan $server_ip >> ~/.ssh/known_hosts
     - chmod 600 ~/.ssh/known_hosts
     - cat ~/.ssh/known_hosts
+    - pip install ansible    
+    - export ANSIBLE_HOST_KEY_CHECKING=False    
+    - ansible-playbook -l $CI_COMMIT_BRANCH ./ansible/deploy.yaml --extra-vars "server=$CI_COMMIT_BRANCH branch=$CI_COMMIT_BRANCH"  -i ./ansible/inventory
     
 
