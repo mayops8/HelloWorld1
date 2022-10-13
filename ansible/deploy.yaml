@@ -9,8 +9,8 @@
     #     shell: /opt/tomcat/bin/shutdown.sh 
       - name: Cleaning old data from the Tomcat server 
         shell: | 
-          mv /usr/share/tomcat/webapps/ROOT /home/backup/ROOT 
-          mv /usr/share/tomcat/webapps/ROOT.war /home/backup/ROOT.war 
+          mv /usr/share/tomcat/webapps/hello-world /home/backup/hello-world
+          mv /usr/share/tomcat/webapps/hello-world.war /home/backup/hello-world.war 
           rm -rf /home/project/hello-world 
 # ignore_errors: yes 
       
@@ -22,13 +22,13 @@
             accept_hostkey: yes 
             version: gitlab_CICD
 
-      - name: Creat a war file 
+      - name: Create a war file 
         shell: cd /home/project/hello-world && mvn clean install 
       - name: Upload a war file to the tomcat server 
         shell: 
-            cp /home/project/hello-world/target/*.war /usr/share/tomcat/webapps/ROOT.war 
+            cp /home/project/hello-world/target/*.war /usr/share/tomcat/webapps/hello-world.war 
       - name: Apply permission 
-        shell: chgrp tomcat -R /usr/share/tomcat/webapps/ROOT.war && chown tomcat -R /usr/share/tomcat/webapps/ROOT.war 
+        shell: chgrp tomcat -R /usr/share/tomcat/webapps/hello-world.war && chown tomcat -R /usr/share/tomcat/webapps/hello-world.war 
     #   - name: Start the Tomcat script 
     #     shell: /opt/tomcat/bin/startup.sh 
       - name: Start the Tomcat service 
