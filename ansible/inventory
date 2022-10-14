@@ -1,1 +1,1 @@
-gitlab_CICD ansible_host=3.35.52.68 ansible_user=root ansible_become=yes ansible_connection=ssh
+gitlab_CICD ansible_host=52.78.237.128 ansible_user=root ansible_become=yes ansible_connection=ssh
