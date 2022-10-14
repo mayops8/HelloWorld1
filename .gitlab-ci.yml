@@ -17,7 +17,7 @@ deploy_to_development_environment:
     - chmod 600 ~/.ssh/known_hosts
     - cat ~/.ssh/known_hosts
     - pip install ansible    
-    - export ANSIBLE_HOST_KEY_CHECKING=False    
+    - export ANSIBLE_HOST_KEY_CHECKING=true   
     - ansible-playbook ./ansible/deploy.yaml 
     
 
