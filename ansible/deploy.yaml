@@ -1,4 +1,4 @@
-- hosts: 3.35.52.68 
+- hosts: 52.78.237.128
   name: Deploy hello-world project
   gather_facts: no 
   become: yes 
