@@ -90,7 +90,7 @@ h1{
     <div class="b">Ramesh Jangir</div>
     <div class="c" >Kirti Bafna</div>
     <div class="d">Mayuresh A Naik</div>
-    <div class="e">Shubham Potbhare</div>
+    <div class="e">Shubham H Potbhare</div>
     <p>Jenkin Project Build!</p>
 </body>
 </html>
