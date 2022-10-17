@@ -11,7 +11,7 @@ pipeline {
             }
             
         }
-    }
+    
         stage ('UAT Deploy'){
             steps{
                 script {
@@ -20,5 +20,6 @@ pipeline {
                 
             }
         }
+    }
 }
 
