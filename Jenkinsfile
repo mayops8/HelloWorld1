@@ -1,12 +1,15 @@
 pipeline {
     agent any
-
+    tools {
+        maven 'maven'
+    }
     stages {
-        stage('Build') {
-            steps {
-                sh 'make' 
-                archiveArtifacts artifacts: '**/target/*.war', fingerprint: true 
+        stage ('Build Maven'){
+            steps{
+             
+             sh 'mvn clean install'
             }
+            
         }
     }
 }
