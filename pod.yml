@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nodeapp
+    app: hello-world
   name: hello-world
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:   
-      app: nodeapp
+      app: hello-world
   template:
     metadata:
       labels:
-        app: nodeapp
+        app: hello-world
     spec:
       containers:
-      - image: akshpawardocker/tomcat:10.0.0
+      - image: akshpawardocker/helloworld:latest
         name: hello-world
         ports:
         - containerPort: 8080
