@@ -32,12 +32,12 @@
     <th>Email</th>
   </tr>
     <tr>
-    <td>Kirti Bafna(Team Leader)</td>
+    <td>KIRTI Bafna(Team Leader)</td>
     <td>Devops&cloudops</td>
     <td>k.bafna@rnt.ai</td>
   </tr>
   <tr>
-    <td>Adity Sankpal </td>
+    <td>Aditya Sankpal </td>
     <td>Devops&cloudops</td>
     <td>a.sankpal@rnt.ai</td>
   </tr>
