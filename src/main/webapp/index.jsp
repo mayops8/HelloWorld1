@@ -32,7 +32,7 @@
     <th>Email</th>
   </tr>
     <tr>
-    <td>KIRTI Bafna(Team Leader)</td>
+    <td>Kirti Bafna(Team Leader)</td>
     <td>Devops&cloudops</td>
     <td>k.bafna@rnt.ai</td>
   </tr>
