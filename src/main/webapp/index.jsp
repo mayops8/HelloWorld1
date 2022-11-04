@@ -91,6 +91,8 @@ h1{
     <div class="c" >Kirti Bafna</div>
     <div class="d">Mayuresh Naik</div>
     <div class="e">Shubham Potbhare</div>
+    <div class="f">Gaurav Koshti</div>
+    <div class="h">Vivek Mohale</div>
     <p>Jenkin Project Build!</p>
 </body>
 </html>
