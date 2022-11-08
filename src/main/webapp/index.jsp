@@ -92,7 +92,7 @@ h1{
     <div class="d">Mayuresh Naik</div>
     <div class="e">Shubham Potbhare</div>
     <div class="f">Gaurav Koshti</div>
-    <div class="h">Vivek Mohale</div>
+    <div class="h">Vivek Mohale vaibhav</div>
     <h6>Hii </h6>
     <p>Jenkin Project Build!</p>
 </body>
