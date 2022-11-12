@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1><b>HTML our First jenkins project.</b></h1>
+<h1><b>HTML our First jenkins project</b></h1>
 <h2>CICD</h2>
 <div>
     <h1>Vinit Patil</h1>
