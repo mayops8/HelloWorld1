@@ -7,7 +7,7 @@
     <h2>Aditya Sankpal</h2>
     <h3>Shubham Bangre</h3>
     <h4>Gaurav Koshti</h4>
-    <h4> Mohale</h4>
+    <h4> Vivek Mohale</h4>
 
 
 </div>
