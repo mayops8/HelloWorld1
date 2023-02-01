@@ -1,4 +1,4 @@
-FROM akshpawardocker/tomcat9.0.63:latest
+FROM akshpawardocker/tomcat:9.0.63
 LABEL maintainer="kirti"
 COPY ./target/hello-world.war /usr/local/tomcat/webapps/
 EXPOSE 8080
