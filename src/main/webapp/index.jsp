@@ -84,7 +84,7 @@ h1{
     </head >
 <body>
     <h1> Our First Jenkins project.</h1>
-    <h2>Deployed from jenkins!</h2>
+    <h2>Deployed from jenkinss....!</h2>
 <div>
    <div class="a">Vinit Patil</div>
     <div class="b">Ramesh Jangir</div>
