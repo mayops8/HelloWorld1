@@ -94,6 +94,6 @@ h1{
     <div class="f">Shubham Bangre</div>
     <div class="h">Aditya sankpal</div>
     <h6>Hii </h6>
-    <p>Jenkin Project Build!</p>
+    <p>Jenkin Pro</p>
 </body>
 </html>
