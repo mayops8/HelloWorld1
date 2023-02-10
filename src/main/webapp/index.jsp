@@ -93,7 +93,7 @@ h1{
     <div class="e">Shubham Potbhare</div>
     <div class="f">Shubham Bangre</div>
     <div class="h">Aditya sankpal</div>
-    <h6>Hii hello </h6>
+    <h6>Hii helsssslo </h6>
     <p>Jenkin Pro</p>
 </body>
 </html>
