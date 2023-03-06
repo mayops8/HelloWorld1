@@ -1,4 +1,4 @@
-FROM mayuresh76/tomcat:9.0.63
+FROM mayuresh76/tomcat
 LABEL maintainer="shubham"
 COPY ./target/hello-world.war /usr/local/tomcat/webapps/
 COPY ./target/hello-world.war /usr/share/tomcat/webapps/
