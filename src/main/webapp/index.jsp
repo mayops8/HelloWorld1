@@ -6,6 +6,9 @@
     <h1>ViPatil</h1>
     <h2>Aditya Sankpal</h2>
     <h3>Shubham Bangre</h3>
+    <h4>Kirti Bafna</h4>
+    <h4>Onkar Chavan</h4>
+    <h4>Sumeet Gawani</h4>
     <ul>
         <p><p>
     </ul>
