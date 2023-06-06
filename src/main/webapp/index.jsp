@@ -4,7 +4,7 @@
 <h2>CICD</h2>
 <div>
    
-    <h2>Aditya Sankpal</h2>
+    
     <h3>Shubham Bangre</h3>
     <h4>Kirti Bafna</h4>
     <h4>Onkar Chavan</h4>
