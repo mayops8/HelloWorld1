@@ -5,24 +5,24 @@ phases:
  runtime-versions:
     java: corretto17
  pre_build:
- commands:
- - echo Logging in to Amazon ECR...
- - aws --version
- - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 928052840712.dkr.ecr.ap-south-1.amazonaws.com
+   commands:
+     - echo Logging in to Amazon ECR...
+     - aws --version
+     - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 928052840712.dkr.ecr.ap-south-1.amazonaws.com
  build:
- commands:
- - echo Build started on `date`
- - echo Building the Jar file...
- - mvn clean install
- - echo Building the Docker image...
- - docker build -t java .
- - docker tag java:latest 928052840712.dkr.ecr.ap-south-1.amazonaws.com/java:latest
+   commands:
+     - echo Build started on `date`
+     - echo Building the Jar file...
+     - mvn clean install
+     - echo Building the Docker image...
+     - docker build -t java .
+     - docker tag java:latest 928052840712.dkr.ecr.ap-south-1.amazonaws.com/java:latest
  post_build:
- commands:
- - echo Build completed on `date`
- - echo Pushing the Docker images...
- - docker push 928052840712.dkr.ecr.ap-south-1.amazonaws.com/java:latest
- - printf '[{"name":"java","imageUri":"%s"}]' 928052840712.dkr.ecr.ap-south-1.amazonaws.com/java:latest > imagedefinitions.json
- - cat imagedefinitions.json
+   commands:
+     - echo Build completed on `date`
+     - echo Pushing the Docker images...
+     - docker push 928052840712.dkr.ecr.ap-south-1.amazonaws.com/java:latest
+     - printf '[{"name":"java","imageUri":"%s"}]' 928052840712.dkr.ecr.ap-south-1.amazonaws.com/java:latest > imagedefinitions.json
+     - cat imagedefinitions.json
 artifacts:
  files: imagedefinitions.json
