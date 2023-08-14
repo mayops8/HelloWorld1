@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1><b>HTML... change First jenkins project</b></h1>
+<h1><b>Welcome to Devops Group</b></h1>
 <h2>CICD</h2>
 <div>
    
